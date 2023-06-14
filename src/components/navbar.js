@@ -8,8 +8,10 @@ import Form from 'react-bootstrap/Form';
 
 function MyNavbar() {
   return (
+    // Navbar 
     <Navbar bg="light" expand="lg">
       <Container>
+         {/* Left Side of Navbar */}
         <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -28,13 +30,16 @@ function MyNavbar() {
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
+          {/* Right side of navbar */}
           <Form className="d-flex">
+            {/* Search Input */}
                   <Form.Control
                     type="search"
                     placeholder="Search"
                     className="me-2"
                     aria-label="Search"
                   />
+                  {/* Search submit Button */}
                   <Button variant="outline-success">Search</Button>
                 </Form>
         </Navbar.Collapse>
